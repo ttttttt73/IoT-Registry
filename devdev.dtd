@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT devlist (dev+)>
+<!ELEMENT dev (value+, time)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+
+<!ATTLIST dev name CDATA #REQUIRED>
+<!ATTLIST value name CDATA #REQUIRED>

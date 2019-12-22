@@ -1,0 +1,13 @@
+{
+	"meta_info": {
+		"topic": "reading/temperature/test1",
+		"dev_name": "rpi",
+		"sensor_name": "HTU21D",
+		"interface": "I2C",
+		"sensor_type": "temperature",
+		"data_type": "float",
+		"delay_time": "600",
+		"valid_max": "50",
+		"valid_min": "-30"
+	}
+}

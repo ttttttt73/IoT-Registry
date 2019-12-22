@@ -1,0 +1,13 @@
+{
+	"type": "Sensor",
+	"ID": "",
+	"meta_info": {
+		"topic": "1",
+		"dev_name": "1",
+		"sensor_name": "",
+		"interface": "1",
+		"sensor_type": "1",
+		"data_type": "1",
+		"delay_time": "11"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"type": "Sensor",
+	"ID": "003s",
+	"meta_info": {
+		"topic": "reading/camera/test1",
+		"dev_name": "rpi",
+		"sensor_name": "pi_camera",
+		"interface": "I2C",
+		"sensor_type": "image",
+		"data_type": "binary",
+		"delay_time": "600",
+		"valid": {
+			"value": null
+		}
+	}
+}

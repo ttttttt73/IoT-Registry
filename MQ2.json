@@ -1,0 +1,17 @@
+{
+	"type": "Sensor",
+	"ID": "002s",
+	"meta_info": {
+		"topic": "reading/smoke/test1",
+		"dev_name": "rpi",
+		"sensor_name": "MQ2",
+		"interface": "I2C",
+		"sensor_type": "smoke",
+		"data_type": "float",
+		"delay_time": "600",
+		"valid": {
+			"max": "100",
+			"min": "0"
+		}
+	}
+}
