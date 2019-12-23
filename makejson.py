@@ -15,13 +15,14 @@ def sensor_json():
     group_data["type"] = "Sensor"
     group_data["ID"] = "004s"
 
-    meta_info["topic"] = "reading/mpu6050/test1"
+    meta_info["topic"] = "reading/mpu6050"
     meta_info["dev_name"] = "rpi"
     meta_info["sensor_name"] = "mpu6050"
     meta_info["interface"] = "I2C"
     meta_info["sensor_type"] = "Angular velocity"
     meta_info["data_type"] = "float"
     meta_info["delay_time"] = "600"
+    meta_info["value_type"] = ['x', 'y', 'z']
     # valid["value"] = None
 
     valid["x_max"] = "100"
@@ -51,13 +52,14 @@ def actuaotr_json():
     group_data["type"] = "Actuator"
     group_data["ID"] = "004s"
 
-    meta_info["topic"] = "reading/mpu6050/test1"
+    meta_info["topic"] = "reading/mpu6050"
     meta_info["dev_name"] = "rpi"
     meta_info["sensor_name"] = "mpu6050"
     meta_info["interface"] = "I2C"
     meta_info["sensor_type"] = "Angular velocity"
     meta_info["data_type"] = "float"
     meta_info["delay_time"] = "600"
+    meta_info["value_type"] = ['x', 'y', 'z']
     meta_info["commnad"] = ['on', 'off']
     # valid["value"] = None
 
