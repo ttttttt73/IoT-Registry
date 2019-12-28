@@ -1,30 +1,27 @@
 {
-	"type": "Actuator",
-	"ID": "004s",
-	"meta_info": {
-		"topic": "reading/mpu6050",
-		"dev_name": "rpi",
-		"sensor_name": "mpu6050",
-		"interface": "I2C",
-		"sensor_type": "Angular velocity",
-		"data_type": "float",
-		"delay_time": "600",
-		"value_type": [
-			"x",
-			"y",
-			"z"
-		],
-		"commnad": [
-			"on",
-			"off"
-		],
-		"valid": {
-			"x_max": "100",
-			"x_min": "0",
-			"y_max": "100",
-			"y_min": "0",
-			"z_max": "100",
-			"z_min": "0"
-		}
+	"type": "Sensor",
+	"topic": "reading/mpu6050",
+	"dev_name": "rpi",
+	"sensor_name": "mpu6050",
+	"interface": "I2C",
+	"sensor_type": "Angular velocity",
+	"data_type": "float",
+	"delay_time": "600",
+	"value_type": [
+		"x",
+		"y",
+		"z"
+	],
+	"commnad": [
+		"on",
+		"off"
+	],
+	"valid": {
+		"x_max": "100",
+		"x_min": "0",
+		"y_max": "100",
+		"y_min": "0",
+		"z_max": "100",
+		"z_min": "0"
 	}
 }
