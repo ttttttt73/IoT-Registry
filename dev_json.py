@@ -7,6 +7,8 @@ class regist:
         pass
 
     def make_json(self):
+        self.type = input('type을 입력해주세요(ex. Sensor, Actuator) :')
+        print('type:', self.type)
         self.topic = input('topic을 입력해주세요 : ')
         print('topic:', self.topic)
         self.dev_name = input('dev_name을 입력해주세요 : ')
@@ -21,38 +23,40 @@ class regist:
         print('data_type:', self.data_type)
         self.delay_time = input('delay_time을 입력해주세요 : ')
         print('delay_time:', self.delay_time)
+        self.value_type = input('value_type을 입력해주세요(ex.temperature) : ')
+        print('value_type:', self.value_type)
+        self.command = input('command을 입력해주세요 : ')
+        print('command:', self.command)
         self.valid_max = input('valid_max을 입력해주세요 : ')
         print('valid_max:', self.valid_max)
         self.valid_min = input('valid_min을 입력해주세요 : ')
         print('valid_min:', self.valid_min)
 
         self.group_data = OrderedDict()
-        self.meta_info = OrderedDict()
         self.valid = OrderedDict()
 
-        self.group_data["type"] = "Sensor"
-        self.group_data["ID"] = ""
-
-        self.meta_info["topic"] = self.topic
-        self.meta_info["dev_name"] = self.dev_name
-        self.meta_info["sensor_name"] = self.sensor_name
-        self.meta_info["interface"] = self.interface
-        self.meta_info["sensor_type"] = self.sensor_type
-        self.meta_info["data_type"] = self.data_type
-        self.meta_info["delay_time"] = self.delay_time
-
-        self.group_data["meta_info"] = self.meta_info
-
+        self.group_data["type"] = self.type
+        self.group_data["topic"] = self.topic
+        self.group_data["dev_name"] = self.dev_name
+        self.group_data["sensor_name"] = self.sensor_name
+        self.group_data["interface"] = self.interface
+        self.group_data["sensor_type"] = self.sensor_type
+        self.group_data["data_type"] = self.data_type
+        self.group_data["delay_time"] = self.delay_time
+        self.group_data["value_type"] = self.value_type
+        self.group_data["command"] = self.command
+        # self.valid[] = self.valid_max
+        # self.valid[] = self.valid_min
+        self.group_data["valid"] = self.valid
         self.sensor_meta = json.dumps(self.group_data, ensure_ascii=False, indent="\t")
         # print(sensor_meta)
         # return self.sensor_meta
 
     def write_json(self):
         # self.make_json()
-
-        with open('test.json', 'w', encoding="utf-8") as make_file:
+        file_name = input('파일 이름을 입력해주세요(ex. test.json) :')
+        with open(file_name, 'w', encoding="utf-8") as make_file:
             json.dump(self.group_data, make_file, ensure_ascii=False, indent="\t")
-
         print("jsonfile created")
 
     @staticmethod

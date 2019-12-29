@@ -1,0 +1,16 @@
+{
+	"type": "Actuator",
+	"topic": "reading/doorlock",
+	"dev_name": "rpi",
+	"sensor_name": "doorlock",
+	"interface": "I2C",
+	"sensor_type": null,
+	"data_type": "bool",
+	"delay_time": "10",
+	"value_type": "bool",
+	"commnad": [
+		"on",
+		"off"
+	],
+	"valid": "bool"
+}

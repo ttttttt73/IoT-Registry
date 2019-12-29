@@ -1,17 +1,13 @@
 {
-	"type": "Sensor",
+	"type": "Actuator",
 	"topic": "reading/mpu6050",
 	"dev_name": "rpi",
 	"sensor_name": "mpu6050",
 	"interface": "I2C",
-	"sensor_type": "Angular velocity",
+	"sensor_type": "gyro",
 	"data_type": "float",
 	"delay_time": "600",
-	"value_type": [
-		"x",
-		"y",
-		"z"
-	],
+	"value_type": "pitch roll yaw",
 	"commnad": [
 		"on",
 		"off"
